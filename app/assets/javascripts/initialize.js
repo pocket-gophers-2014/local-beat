@@ -1,12 +1,9 @@
 $(document).ready(function(){
-  var display = new mapView();
-  new mapController(display).init()
-
-
+  var view = new mapView();
+  new mapController(view).init()
 
   var seshView = new sessionView()
   var seshController = new sessionController(seshView)
-
   seshController.init()
 
   new searchController().init()
